@@ -42,9 +42,46 @@ def get_word(words):
         word = random.choice(words)
 
     return word.upper()
-    
-        
+
+
 def hungman_game(): 
+    """
+    making user to make guess a random words if 
+    letters are wrong then it effect the lives
+    """
+    hangman_logo()
+    welcome_rules()
+    word = get_word(words)
+    letter_used = set(word)
+    letter = set(string.ascii_uppercase)
+    letter_choose = set()
+
+    lives = choose_level()
+
+    while len(letter_used) > 0 and lives > 0:
+        print("\nYou choose these Alphabet:", ' '.join(sorted(letter_choose)))
+        print('\nLifes left',lives)
+
+        user_choice = input('\nPlease choose a letter').upper()
+
+        if user_choice in letter - letter_choose:
+            letter_choose.add(user_choice)
+            if user_choice in letter_used:
+                letter_used.remove(user_choice)
+                print('')
+
+            else:
+                lifes = lives - 1
+                print('\nSorry', user_choice, 'is not the letter.')
+        elif user_choice in letter_choose:
+             print('\nYou have already selected this letter before, try agian')
+
+        else:
+            print("\nPlease try agin with valid letters,A-Z")
+            
+
+                        
+
 def hangman_logo():
 def welcome_rules():
 def choose_level():
