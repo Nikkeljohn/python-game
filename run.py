@@ -29,4 +29,15 @@ def player_name():
         print(colors.green + "Valid letters (A-Z)only please.\n"  + colors.white)
      sleep(1)
      print("\nGood luck to you," + colors.red + f"{name.capitalize()}!")
-     return name       
+     return name    
+
+def get_word(words):
+def hungman_game(): 
+def hangman_logo():
+def welcome_rules():
+def choose_level():
+
+sleep(1)
+hangman_logo()
+    
+    
