@@ -32,6 +32,18 @@ def player_name():
      return name    
 
 def get_word(words):
+    """
+    chooses random words from 'words.py' file
+    is skipped when invalid words
+    """
+    word = random.choice(words)
+
+    while ' ' in word or '-' in word:
+        word = random.choice(words)
+
+    return word.upper()
+    
+        
 def hungman_game(): 
 def hangman_logo():
 def welcome_rules():
