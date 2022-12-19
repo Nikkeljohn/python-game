@@ -90,6 +90,19 @@ def hungman_game():
                         
 
 def hangman_logo():
+    """
+    hungman logo is shown in the cyan color in the beginning of the game
+    """
+    print(colors.cyan + """
+       _   _                                         _
+        | | | | __ _ _ __   __ _ _ __ ___   __ _ _ __ | |
+        | |_| |/ _` | '_ \ / _` | '_ ` _ \ / _` | '_ \| |
+        |  _  | (_| | | | | (_| | | | | | | (_| | | | |_|
+        |_| |_|\__,_|_| |_|\__, |_| |_| |_|\__,_|_| |_(_)
+                            |___/
+        """ + colors.white)
+
+        
 def welcome_rules():
 def choose_level():
 
