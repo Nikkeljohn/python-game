@@ -79,7 +79,14 @@ def hungman_game():
         else:
             print("\nPlease try agin with valid letters,A-Z")
             
-
+# when player lose
+    if lives == 0:
+        print(colors.orange + lives_left[lives] + colors.white)
+        print(colors.bold + f"Am really sorry, {name.capitalize()},you have been hanged!")
+        print("The answer was" + colors.green, word + colors.white)
+    else:
+        print(colors.bold + f"Well done {name.capitalize()}!")
+        print("Congrats your answer is" + colors.cyan, word + colors.white)    
                         
 
 def hangman_logo():
