@@ -21,15 +21,15 @@ def player_name():
     This will be used in game so their name will be used,
      in the game to wish them luck
      """
-     global name
-     while True:
-         name = input("\nWho is playing ?")
-         if name.isalpha():
+    global name
+    while True:
+        name = input("\nWho is playing ?")
+        if name.isalpha():
              break
         print(colors.green + "Valid letters (A-Z)only please.\n"  + colors.white)
-     sleep(1)
-     print("\nGood luck to you," + colors.red + f"{name.capitalize()}!")
-     return name    
+    sleep(1)
+    print("\nGood luck to you," + colors.red + f"{name.capitalize()}!")
+    return name    
 
 def get_word(words):
     """
