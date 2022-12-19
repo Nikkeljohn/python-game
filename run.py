@@ -116,7 +116,22 @@ def game_rules():
     sleep(1)
     print("--------------------------")
     sleep(1)
+
 def choose_level():
+    """
+    Enter 'e','m', or 'h' and choose a level:
+    easy(10 lives), medium (7 lives) and hard(5 lives).
+    """
+    print(colors.white + "\n To start game , please choose...\n") 
+    print(colors.green, 'E' + colors.white, "for easy \n")
+    print("You have " + colors.cyan, "10 lives. \n" + colors.white)
+    sleep(1)
+    print(colors.orange, "M" + colors.white, "for medium \n")
+    print("you have" + colors.orange, "7 lives. \n" + colors.white)
+    sleep(1)
+    print(colors.red, "H" + colors.white, " for hard \n")
+    print("You have" + colors.red, "5 lives. \n") 
+    sleep(1) 
 
 sleep(1)
 hangman_logo()
