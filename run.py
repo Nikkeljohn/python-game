@@ -145,8 +145,16 @@ def choose_level():
         else: 
             print(colors.red + "\n Please enter E, M or H" + colors.white)
             print("Select your level of difficulty.")
-                
-                     
+
+hungman_game()
+
+while True:
+    if input("Would you like to have a rematch? preys any key = quit, Y = start again").upper() == "Y":
+        hungman_game()
+    else:
+        print(colors.purple + "Thanks for playing Hungman.. \n")   
+        break 
+
 
 sleep(1)
 hangman_logo()
