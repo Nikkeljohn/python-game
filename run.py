@@ -50,7 +50,7 @@ def hungman_game():
     letters are wrong then it effect the lives
     """
     hangman_logo()
-    welcome_rules()
+    game_rules()
     word = get_word(words)
     letter_used = set(word)
     letter = set(string.ascii_uppercase)
@@ -102,8 +102,20 @@ def hangman_logo():
                             |___/
         """ + colors.white)
 
-        
-def welcome_rules():
+
+def game_rules():
+    """
+    greets the user to the game 
+    tells the rules , and allow them to choose level(easy,medium and hard)
+    """
+    print("Greetings from Hungman! \n")
+    sleep(1)
+    print("Guess the Answer before you are hunged. \n")
+    sleep(1)
+    print("Select a level (easy, medium or hard ), and follow the rules. \n")
+    sleep(1)
+    print("--------------------------")
+    sleep(1)
 def choose_level():
 
 sleep(1)
