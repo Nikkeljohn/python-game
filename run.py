@@ -1,4 +1,3 @@
-
 import random
 from words import words
 from hungman import lives_left
