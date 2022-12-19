@@ -130,8 +130,23 @@ def choose_level():
     print("you have" + colors.orange, "7 lives. \n" + colors.white)
     sleep(1)
     print(colors.red, "H" + colors.white, " for hard \n")
-    print("You have" + colors.red, "5 lives. \n") 
-    sleep(1) 
+    print("You have" + colors.red, "5 lives. \n" + colors.white)
+
+    difficult = True
+    while difficult:
+        options = input("\n ").upper()
+        if options == "E":
+            lives = 10
+            return lives
+        elif options == "M":
+            lives = 7
+        elif options == "H":
+            lives = 5
+        else: 
+            print(colors.red + "\n Please enter E, M or H" + colors.white)
+            print("Select your level of difficulty.")
+                
+                     
 
 sleep(1)
 hangman_logo()
