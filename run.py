@@ -4,8 +4,8 @@ from hungman import lives_left
 import string
 from time import sleep
 
-#colors for the game 
-class colors:
+
+class Colors:
     purple = '\033[95m'
     cyan = '\033[96m'
     green = '\033[92m'
@@ -14,21 +14,23 @@ class colors:
     white = '\033[0m'
     bold = '\033[1m'
 
+
 def player_name():
     """
-    player has enter their name . 
-    This will be used in game so their name will be used,
+     player has enter their name .
+     This will be used in game so their name will be used,
      in the game to wish them luck
      """
     global name
     while True:
         name = input("\nWho is playing ?")
         if name.isalpha():
-             break
-        print(colors.green + "Valid letters (A-Z)only please.\n"  + colors.white)
+            break
+    print(Colors.green + "Valid letters (A-Z)only please.\n" + Colors.white)
     sleep(1)
-    print("\nGood luck to you," + colors.red + f"{name.capitalize()}!")
-    return name    
+    print("\nGood luck to you," + Colors.red + f"{name.capitalize()}!")
+    return name
+
 
 def get_word(words):
     """
@@ -43,12 +45,13 @@ def get_word(words):
     return word.upper()
 
 
-def hungman_game(): 
+def hungman_game():
     """
-    making user to make guess a random words if 
+    making user to make guess a random words if
     letters are wrong then it effect the lives
     """
     hangman_logo()
+    player_name()
     game_rules()
     word = get_word(words)
     letter_used = set(word)
@@ -59,7 +62,7 @@ def hungman_game():
 
     while len(letter_used) > 0 and lives > 0:
         print("\nYou choose these Alphabet:", ' '.join(sorted(letter_choose)))
-        print('\nLifes left',lives)
+        print('\nLifes left', lives)
 
         user_choice = input('\nPlease choose a letter').upper()
 
@@ -70,41 +73,41 @@ def hungman_game():
                 print('')
 
             else:
-                lifes = lives - 1
+                lives = lives - 1
                 print('\nSorry', user_choice, 'is not the letter.')
         elif user_choice in letter_choose:
-             print('\nYou have already selected this letter before, try agian')
+            print('\nYou have already selected this letter before, try agian')
 
         else:
             print("\nPlease try agin with valid letters,A-Z")
-            
+
 # when player lose
     if lives == 0:
-        print(colors.orange + lives_left[lives] + colors.white)
-        print(colors.bold + f"Am really sorry, {name.capitalize()},you have been hanged!")
-        print("The answer was" + colors.green, word + colors.white)
+        print(Colors.orange + lives_left[lives] + Colors.white)
+        print(Colors.bold + f"Am really sorry, {name.capitalize()},you have been hanged!")
+        print("The answer was" + Colors.green, word + Colors.white)
     else:
-        print(colors.bold + f"Well done {name.capitalize()}!")
-        print("Congrats your answer is" + colors.cyan, word + colors.white)    
-                        
+        print(Colors.bold + f"Well done {name.capitalize()}!")
+        print("Congrats your answer is" + Colors.cyan, word + Colors.white)
+
 
 def hangman_logo():
     """
     hungman logo is shown in the cyan color in the beginning of the game
     """
-    print(colors.cyan + """
-       _   _                                         _
-        | | | | __ _ _ __   __ _ _ __ ___   __ _ _ __ | |
-        | |_| |/ _` | '_ \ / _` | '_ ` _ \ / _` | '_ \| |
-        |  _  | (_| | | | | (_| | | | | | | (_| | | | |_|
-        |_| |_|\__,_|_| |_|\__, |_| |_| |_|\__,_|_| |_(_)
+    print(Colors.cyan + """
+     _   _                                         _
+    | | | | __ _ _ __   __ _ _ __ ___   __ _ _ __ | |
+    | |_| |/ _` | '_ \ / _` | '_ ` _ \ / _` | '_ \| |
+    |  _  | (_| | | | | (_| | | | | | | (_| | | | |_|
+    |_| |_|\__,_|_| |_|\__, |_| |_| |_|\__,_|_| |_(_)
                             |___/
-        """ + colors.white)
+        """ + Colors.white)
 
 
 def game_rules():
     """
-    greets the user to the game 
+    greets the user to the game
     tells the rules , and allow them to choose level(easy,medium and hard)
     """
     print("Greetings from Hungman! \n")
@@ -116,20 +119,21 @@ def game_rules():
     print("--------------------------")
     sleep(1)
 
+
 def choose_level():
     """
     Enter 'e','m', or 'h' and choose a level:
     easy(10 lives), medium (7 lives) and hard(5 lives).
     """
-    print(colors.white + "\n To start game , please choose...\n") 
-    print(colors.green, 'E' + colors.white, "for easy \n")
-    print("You have " + colors.cyan, "10 lives. \n" + colors.white)
+    print(Colors.white + "\n To start game , please choose...\n")
+    print(Colors.green, 'E' + Colors.white, "for easy \n")
+    print("You have " + Colors.cyan, "10 lives. \n" + Colors.white)
     sleep(1)
-    print(colors.orange, "M" + colors.white, "for medium \n")
-    print("you have" + colors.orange, "7 lives. \n" + colors.white)
+    print(Colors.orange, "M" + Colors.white, "for medium \n")
+    print("you have" + Colors.orange, "7 lives. \n" + Colors.white)
     sleep(1)
-    print(colors.red, "H" + colors.white, " for hard \n")
-    print("You have" + colors.red, "5 lives. \n" + colors.white)
+    print(Colors.red, "H" + Colors.white, " for hard \n")
+    print("You have" + Colors.red, "5 lives. \n" + Colors.white)
 
     difficult = True
     while difficult:
@@ -141,9 +145,11 @@ def choose_level():
             lives = 7
         elif options == "H":
             lives = 5
-        else: 
-            print(colors.red + "\n Please enter E, M or H" + colors.white)
+        else:
+            print(Colors.red + "\n Please enter E, M or H" + Colors.white)
             print("Select your level of difficulty.")
+        return lives
+
 
 hungman_game()
 
@@ -151,11 +157,9 @@ while True:
     if input("Would you like to have a rematch? preys any key = quit, Y = start again").upper() == "Y":
         hungman_game()
     else:
-        print(colors.purple + "Thanks for playing Hungman.. \n")   
-        break 
+        print(Colors.purple + "Thanks for playing Hungman.. \n")
+        break
 
 
 sleep(1)
 hangman_logo()
-    
-    
