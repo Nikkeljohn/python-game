@@ -6,3 +6,5 @@ The user can play the game at three different levels of difficulty, based on the
 When the game is over the user will be aske if the wanted to start over or just leave the game.  While pressing 'Y' will restart the game with a new random word and the difficulty level chosen by the player.If any other key is pressed apart from Y ('N' or another character) will conclude the game with a 'Thanks for playing...' message followed by the Hangman logo.
 
 live webesite for game [here](https://hungman-1.herokuapp.com/).
+
+![The Hungman Game!](/assets/frontpage.png)
