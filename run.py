@@ -64,8 +64,8 @@ def hungman_game():
         print("\nYou choose these Alphabet:", ' '.join(sorted(letter_choose)))
         print('\nLifes left', lives)
 
-        letter_guess = [lett if lett in lett_guessed else '_' for lett in word]
-        print(colors.red + lives_left[lives] + colors.white)
+        letter_guess = [lett if lett in letter_choose else '_' for lett in word]
+        print(Colors.red + lives_left[lives] + Colors.white)
         print('Current word: ', ' '.join(letter_guess))
         print('\n----------------------------------------')
 
