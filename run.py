@@ -84,7 +84,7 @@ def hungman_game():
 # when player lose
     if lives == 0:
         print(Colors.orange + lives_left[lives] + Colors.white)
-        print(Colors.bold + f"Am really sorry, {name.capitalize()},you have been hanged!")
+        print(Colors.bold + f"Am sorry, {name.capitalize()},you are hanged!")
         print("The answer was" + Colors.green, word + Colors.white)
     else:
         print(Colors.bold + f"Well done {name.capitalize()}!")
@@ -154,7 +154,7 @@ def choose_level():
 hungman_game()
 
 while True:
-    if input("Would you like to have a rematch? preys any key = quit, Y = start again").upper() == "Y":
+    if input("Want a rematch? press any key = quit, Y = start").upper() == "Y":
         hungman_game()
     else:
         print(Colors.purple + "Thanks for playing Hungman.. \n")
