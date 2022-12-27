@@ -8,3 +8,13 @@ When the game is over the user will be aske if the wanted to start over or just 
 live webesite for game [here](https://hungman-1.herokuapp.com/).
 
 ![The Hungman Game!](/assets/frontpage.png)
+
+## FlowChart
+The game work flow was created from using [Lucid](http:lucid.app). Here you can see how the game works from the starting to end ß
+
+
+![FlowChart](./assets/flowchart.png)
+
+## Playing The Game 
+The user is asked at the start and the user has to select H,M or E so the game can identify the level and random word will be shown. then the user has to guess 1 letter at a time. If the letter is not in the word, a life will be lost and a part of the gallows or a body part of the figure will appear or else If the letter is part of the word, it will appear in one of the blank spaces.
+
