@@ -6,6 +6,10 @@ from time import sleep
 
 
 class Colors:
+    """
+     adding colors for the game such as logo
+     difficulties and etc
+    """
     purple = '\033[95m'
     cyan = '\033[96m'
     green = '\033[92m'
@@ -69,7 +73,6 @@ def hungman_game():
         print('Current word: ', ' '.join(letter_guess))
         print('\n----------------------------------------')
 
-
         user_choice = input('\nPlease choose a letter').upper()
 
         if user_choice in letter - letter_choose:
@@ -107,7 +110,7 @@ def hangman_logo():
     | |_| |/ _` | '_ \ / _` | '_ ` _ \ / _` | '_ \| |
     |  _  | (_| | | | | (_| | | | | | | (_| | | | |_|
     |_| |_|\__,_|_| |_|\__, |_| |_| |_|\__,_|_| |_(_)
-                            |___/
+                        |___/
         """ + Colors.white)
 
 
