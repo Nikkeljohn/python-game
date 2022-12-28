@@ -43,5 +43,23 @@ The game has the same rule like all the other hungman game guess the correct wor
 
 ![current](/assets/currentword.png)
 
+* If the user types same letter 2 times or any other more than one then, the game will ask them to correct it but no lives will reduced from their game. 
+
+
+* The game will identify if the letter which is entered is not part of the game , and 1 life will be reduced after that hungman picture is shown has per the difficulty level choosed by the user 
+
+![Incorrect letter](/assets/3.png)
+
+* If the user wins or lose then these message are showed by their name 
+
+![Hunged](/assets/lose.png)
+
+![congrats](/assets/win.png)
+
+
+
+
+
+
 
 
