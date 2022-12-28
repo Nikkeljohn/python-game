@@ -134,6 +134,31 @@ Before deploying to Heroku pip3 freeze > requirements.txt was used to add pyfigl
 
 Git was used as the version control software. Commands such as git add ., git status, git commit and git push were used to add, save, stage and push the code to the GitHub repository where the source code is stored.
 
+The following git commands were used throughout development to push code to the remote repo:
+
+```git add <file>``` - This command was used to add the file(s) to the staging area before they are committed.
+
+```git commit -m “commit message”``` - This command was used to commit changes to the local repository queue ready for the final step.
+
+```git push``` - This command was used to push all committed code to the remote repository on github.
+
+## Cloning the repository on GitHub
+
+You can also clone the repository on GitHub. 
+
+1. Click the green 'Code' button.
+
+2. Click on the two overlapping papers to copy the URL
+
+3. Open Git Bash in the browser.
+
+4. Change the working directory a directory you want your clone to be in.
+
+5. Type 'git clone' and paste the copied URL.
+
+6. Click 'enter' and the clone will be finished.
+
+
 
 
 
