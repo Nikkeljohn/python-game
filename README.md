@@ -203,6 +203,13 @@ You can also clone the repository on GitHub.
 - For timed space betweeen printed statements I imported sleep() from time, which I found through a [Google search](https://www.freecodecamp.org/news/the-python-sleep-function-how-to-make-python-wait-a-few-seconds-before-continuing-with-example-commands/#:~:text=Make%20your%20time%20delay%20specific,after%20a%20slight%20delay.%22).
 
 
+## Special Thanks
+
+special thanks to my mentors Daisy McGirr 
+
+special thanks to slack community and Mikaela Källberg
+
+Special thanks to my batch mates from ucd and all the people who helped me directly and indirectly for this project
 
 
 
