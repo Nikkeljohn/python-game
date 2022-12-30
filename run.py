@@ -170,5 +170,9 @@ while True:
         break
 
 
+print('Hangman!')
+
+print(Colors.cyan + """ Hangman! """ + Colors.white)
+
 sleep(1)
 hangman_logo()
