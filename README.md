@@ -159,6 +159,16 @@ You can also clone the repository on GitHub.
 6. Click 'enter' and the clone will be finished.
 
 
+## Credits
+
+- I used the [Code Institute Python template](https://github.com/Code-Institute-Org/python-essentials-template) for this project.
+
+- I used a [YouTube tutorial](https://www.youtube.com/watch?v=cJJTnI22IF8&t=2s&ab_channel=KylieYing) by Kylie Ying for general idea and used her list of words in the words.py file. Her logic in this video to edit out spaces and '-' characters in the list of words used for the game was also inspired.
+
+- The Hangman graphic was designed using [this software](https://patorjk.com/software/taag/#p=display&f=Standard&t=Hangman!).
+
+- For timed space betweeen printed statements I imported sleep() from time, which I found through a [Google search](https://www.freecodecamp.org/news/the-python-sleep-function-how-to-make-python-wait-a-few-seconds-before-continuing-with-example-commands/#:~:text=Make%20your%20time%20delay%20specific,after%20a%20slight%20delay.%22).
+
 
 
 
