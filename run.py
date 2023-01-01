@@ -1,8 +1,9 @@
+""" Hungman Game imports """
 import random
+from time import sleep
+import string
 from words import words
 from hungman import lives_left
-import string
-from time import sleep
 
 
 class Colors:
@@ -30,7 +31,8 @@ def player_name():
         name = input("\nWho is playing ?")
         if name.isalpha():
             break
-    print(Colors.green + "Valid letters (A-Z)only please.\n" + Colors.white)
+        print((Colors.green + "Valid letters (A-Z)only please.\n" +
+              Colors.white))
     sleep(1)
     print("\nGood luck to you," + Colors.red + f"{name.capitalize()}!")
     return name
@@ -68,7 +70,7 @@ def hungman_game():
         print("\nYou choose these Alphabet:", ' '.join(sorted(letter_choose)))
         print('\nLifes left', lives)
 
-        letter_guess = ([lett if lett in letter_choose 
+        letter_guess = ([lett if lett in letter_choose
                          else '_' for lett in word])
         print(Colors.red + lives_left[lives] + Colors.white)
         print('Current word: ', ' '.join(letter_guess))
