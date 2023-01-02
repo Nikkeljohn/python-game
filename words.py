@@ -1,5 +1,9 @@
 # List made vertical using Prettier formatter w .js file and 'let words=[];'
-words = [
+
+"""
+random words for hungman
+"""
+words = ([
   "aback",
   "abaft",
   "abandoned",
@@ -2642,5 +2646,6 @@ words = [
   "yawn",
   "yell",
   "zip",
-  "zoom",
-]
+  "zoom"
+
+])

@@ -107,7 +107,7 @@ def hangman_logo():
     """
     hungman logo is shown in the cyan color in the beginning of the game
     """
-    print(Colors.cyan + """
+    print(Colors.cyan + r"""
      _   _                                         _
     | | | | __ _ _ __   __ _ _ __ ___   __ _ _ __ | |
     | |_| |/ _` | '_ \ / _` | '_ ` _ \ / _` | '_ \| |
