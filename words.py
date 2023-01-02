@@ -3,7 +3,7 @@
 """
 random words for hungman
 """
-words = ([
+words = [
   "aback",
   "abaft",
   "abandoned",
@@ -2648,4 +2648,4 @@ words = ([
   "zip",
   "zoom"
 
-])
+]

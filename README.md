@@ -1,5 +1,5 @@
-# Hungman game 
-Welcome to hungman game , this is a python terminal game which is deployed to the Heroku. The main aim of this game is for the user to have fun while guessing a random word within  the given limited life. The difficulty of this game is selected by the user.
+# Hangman game 
+Welcome to hangman game , this is a python terminal game which is deployed to the Heroku. The main aim of this game is for the user to have fun while guessing a random word within  the given limited life. The difficulty of this game is selected by the user.
 
 The user can play the game at three different levels of difficulty, based on the number of lives they have: 5 lives for EASY, 7 for MEDIUM, and 10 for HARD. The player wins the game if they guess the word correctly in the allotted number of guesses; Otherwise the game is over.
 
@@ -7,7 +7,7 @@ When the game is over the user will be asked if they wanted to start over or jus
 
 live webesite for game [here](https://hungman-1.herokuapp.com/).
 
-![The Hungman Game!](/assets/frontpage.png)
+![The Hangman Game!](/assets/frontpage.png)
 
 ## FlowChart
 The game work flow was created from using [Lucid](http:lucid.app). Here you can see how the game works from the starting to end ß
@@ -37,19 +37,19 @@ The game has the same rule like all the other hungman game guess the correct wor
 
 ### Selecting the level
 
-*  Next step the player has to choose the level (easy, medium, hard) and the number of lives is reflected (10, 7, 5, respectively).
+*  Next step the player has to choose the level (easy, medium, hard) and the number of lives is reflected (10, 7, 5, respectively).If the player selects the wrong letter then game will show an error message.
 
 ![Level](/assets/level.png)
 
 ### Lives
 
-* Like any other hungman game a wrong letter is entered then a life will be gone 
+* Like any other hangman game a wrong letter is entered then a life will be gone as per the level selected.
 
 ![lives](/assets/currentword.png)
 
 ### Current letter
 
-* Current letters is showed so user can know that he have already typed
+* Current letters is showed so user can know that he have already typed.
 
 ![current](/assets/currentword.png)
 
@@ -113,6 +113,12 @@ Tinyjpg
 * This game was tested in Chrome, Safari and Firefox browswers on a Macbook Pro laptop device. The app worked well in all browsers.
 
 * This game was also tested in some Android phones and worked 
+
+### Game Testing
+
+* First function (While enternig the name if the palyer has enter the anything apart from alphabet like number or etc , then it wont accept the name and again ask to enter name)
+
+* 
 
 
 # Deployment 

@@ -31,7 +31,7 @@ def player_name():
         name = input("\nWho is playing ?")
         if name.isalpha():
             break
-        print((Colors.green + "Valid letters (A-Z)only please.\n" +
+        print((Colors.green + "Thanks for using(A-Z)only.\n" +
               Colors.white))
     sleep(1)
     print("\nGood luck to you," + Colors.red + f"{name.capitalize()}!")
