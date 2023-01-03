@@ -241,9 +241,9 @@ You can also clone the repository on GitHub.
 
 ## Special Thanks
 
-special thanks to my mentors Daisy McGirr 
+special thanks to my mentor Daisy McGirr 
 
-special thanks to slack community and Mikaela Källberg
+special thanks to slack community and Mikaela Källberg 
 
 Special thanks to my batch mates from ucd and all the people who helped me directly and indirectly for this project
 
