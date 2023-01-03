@@ -120,11 +120,23 @@ Tinyjpg
 
 * Second function ( ask player their name and after that game greets them with their name and tell sthem the rules)
 
+if they type numbers or anything else rather than alphabet this message will be shown
+
+![Valid name](/assets/namee.png)
+
 * Third function f ( To start the palyer has to select E,M or H any other letter then game will tell them select E,M or H )
+anyother letter is typed apart from E,M or H , it will show the meassage like this 
+
+![Difficulty](/assets/dif.png)
 
 * Forth function ( as per the selection tof the difficulty the game respond to that even the immage of haung man is changed like for E it will be green, for  M it will be yello and for H it will be red)
 
+as in image below the user has choose the H so his haungman is red
+
+![Red](/assets/life1.png)
+
 * Fifth function (win or lose / game will respond and greet them accordingly that and give them another chance to play)
+
 
 #### Bugs
 
