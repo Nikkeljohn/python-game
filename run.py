@@ -158,10 +158,11 @@ def choose_level():
             lives = 7
         elif options == "H":
             lives = 5
+            return lives
         else:
             print(Colors.red + "\n Please enter E, M or H" + Colors.white)
             print("Select your level of difficulty.")
-        return lives
+       
 
 
 hungman_game()
