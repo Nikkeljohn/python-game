@@ -162,7 +162,6 @@ def choose_level():
         else:
             print(Colors.red + "\n Please enter E, M or H" + Colors.white)
             print("Select your level of difficulty.")
-       
 
 
 hungman_game()

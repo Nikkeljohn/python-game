@@ -118,13 +118,37 @@ Tinyjpg
 
 * First function (While enternig the name if the palyer has enter the anything apart from alphabet like number or etc , then it wont accept the name and again ask to enter name)
 
-* To start the palyer has to select E,M or H any other letter then game will show  error 
+* Second function ( ask player their name and after that game greets them with their name and tell sthem the rules)
 
-* if the palyer select any of the level he will be given life according to the difficulty 
+* Third function f ( To start the palyer has to select E,M or H any other letter then game will tell them select E,M or H )
 
-* if palyer select ivalid letter like numbers then it will show the player that that option is invalid and have to select a valid one .
+* Forth function ( as per the selection tof the difficulty the game respond to that even the immage of haung man is changed like for E it will be green, for  M it will be yello and for H it will be red)
 
-* last function 
+* Fifth function (win or lose / game will respond and greet them accordingly that and give them another chance to play)
+
+#### Bugs
+
+![Problems](/assets/bug1.png)
+
+- here i had so many problems and i tried diffrent things even used r for my log didn't work out 
+
+
+
+![Problems2](/assets/bug2.png)
+
+- i used a function and installed pyfiglet and  pip freeze > requriment.txt was done after instalation  and was import pygfiglet.
+
+
+![Testing](/assets/testing2.png)
+
+
+ ## CI Python Linter
+
+ ![python Linter](/assets/ci1.png)
+
+ ![Python Linter](/assets/ci2.png)
+
+ - No issues was found while testing 
 
 
 # Deployment 
