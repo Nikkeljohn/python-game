@@ -129,7 +129,7 @@ anyother letter is typed apart from E,M or H , it will show the meassage like th
 
 ![Difficulty](/assets/dif.png)
 
-* Forth function ( as per the selection tof the difficulty the game respond to that even the immage of haung man is changed like for E it will be green, for  M it will be yello and for H it will be red)
+* Forth function ( as per the selection tof the difficulty the game respond to that even the letter of haung man is changed like for E it will be green, for  M it will be yellow and for H it will be red)
 
 as in image below the user has choose the H so his haungman is red
 
@@ -251,6 +251,8 @@ You can also clone the repository on GitHub.
 - The Hangman graphic was designed using [this software](https://patorjk.com/software/taag/#p=display&f=Standard&t=Hangman!).
 
 - For timed space betweeen printed statements I imported sleep() from time, which I found through a [Google search](https://www.freecodecamp.org/news/the-python-sleep-function-how-to-make-python-wait-a-few-seconds-before-continuing-with-example-commands/#:~:text=Make%20your%20time%20delay%20specific,after%20a%20slight%20delay.%22).
+
+- Hangman logo function was inspired by [Ciara](https://github.com/ciaraosull/project-3-mastermind/blob/main/run.py)
 
 
 ## Special Thanks
