@@ -135,8 +135,10 @@ as in image below the user has choose the H so his haungman is red
 
 ![Red](/assets/life1.png)
 
+
 * Fifth function (win or lose / game will respond and greet them accordingly that and give them another chance to play)
 
+Game worked so well in every browser and  diffrent os even in mobile 
 
 #### Bugs
 
