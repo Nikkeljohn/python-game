@@ -156,6 +156,7 @@ def choose_level():
             return lives
         elif options == "M":
             lives = 7
+            return lives
         elif options == "H":
             lives = 5
             return lives
