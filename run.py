@@ -2,6 +2,8 @@
 import random
 from time import sleep
 import string
+# import pyfiglet module for ascii art
+import pyfiglet
 from words import words
 from hungman import lives_left
 
@@ -107,14 +109,13 @@ def hangman_logo():
     """
     hungman logo is shown in the cyan color in the beginning of the game
     """
-    print(Colors.cyan + """
-     _   _                                         _
-    | | | | __ _ _ __   __ _ _ __ ___   __ _ _ __ | |
-    | |_| |/ _` | '_ \ / _` | '_ ` _ \ / _` | '_ \| |
-    |  _  | (_| | | | | (_| | | | | | | (_| | | | |_|
-    |_| |_|\__,_|_| |_|\__, |_| |_| |_|\__,_|_| |_(_)
-                        |___/
-        """ + Colors.white)
+    title = pyfiglet.figlet_format(
+        "Hangman", font="standard", justify="center")
+    print(title)
+
+    subtitle = pyfiglet.figlet_format(
+        "Crack The word", font="digital", justify="center")
+    print(subtitle)
 
 
 def game_rules():
