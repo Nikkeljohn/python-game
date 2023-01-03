@@ -31,7 +31,7 @@ def player_name():
         name = input("\nWho is playing ?")
         if name.isalpha():
             break
-        print((Colors.green + "Thanks for using(A-Z)only.\n" +
+        print((Colors.green + "Valid letters (A-Z)only please.\n" +
               Colors.white))
     sleep(1)
     print("\nGood luck to you," + Colors.red + f"{name.capitalize()}!")
@@ -107,7 +107,7 @@ def hangman_logo():
     """
     hungman logo is shown in the cyan color in the beginning of the game
     """
-    print(Colors.cyan + r"""
+    print(Colors.cyan + """
      _   _                                         _
     | | | | __ _ _ __   __ _ _ __ ___   __ _ _ __ | |
     | |_| |/ _` | '_ \ / _` | '_ ` _ \ / _` | '_ \| |

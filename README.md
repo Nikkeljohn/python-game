@@ -118,7 +118,13 @@ Tinyjpg
 
 * First function (While enternig the name if the palyer has enter the anything apart from alphabet like number or etc , then it wont accept the name and again ask to enter name)
 
-* 
+* To start the palyer has to select E,M or H any other letter then game will show  error 
+
+* if the palyer select any of the level he will be given life according to the difficulty 
+
+* if palyer select ivalid letter like numbers then it will show the player that that option is invalid and have to select a valid one .
+
+* last function 
 
 
 # Deployment 
