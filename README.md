@@ -80,6 +80,8 @@ The game has the same rule like all the other hungman game guess the correct wor
 ## Future Development
 
 1. The final letter of the game is not currently shown in the 'Current word:', rather it's highlighted as part of the congratulatory message just under the player's final (correct) guess. Aesthetically, it would be best to have both the word completely written out in the game board and written as congratulations below.
+
+
 ![last word](/assets/win.png)
 
 ## Technologies
@@ -97,7 +99,12 @@ The game has the same rule like all the other hungman game guess the correct wor
  
 
 Tinyjpg
-- https://tinyjpg.com/ was used to reduce the size of the images used throughout the website
+- [Tinyjpg](https://tinyjpg.com/) was used to reduce the size of the images used throughout the website
+
+Lucid Flow Chart
+- [LucidCharts](https://www.lucidchart.com/pages/) was used to create the Flowchart.
+
+
  
 
 ## Testing
